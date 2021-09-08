@@ -7,7 +7,7 @@
 
 # control+shift+c: put into comment
 
-# Initialization ----------------------------------------------------------
+## Initialization ----------------------------------------------------------
 # Load pacakges
 options(warn=-1)
 library(threshr)
