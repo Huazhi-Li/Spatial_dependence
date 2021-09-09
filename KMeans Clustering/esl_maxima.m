@@ -1,6 +1,8 @@
 %%% Extreme sea level 
-%%% To 3-day maxima and save coordinates
+%%% Convert to daily maxima and save coordinates
 %%% Outliers: station 7568, 8226
+%%% Author: Huazhi Li, huazhi.li@vu.nl
+%%% Date: 20-07-2021
 
 clear; close all; warning off; clc 
 
