@@ -1,6 +1,7 @@
 %%% Evaluate Kmeans clustering solutions
-%%% Calculating the optimal number of clusters using the Calinski-Harabasz
-%%% criterion, Handmade criterion, and Camus criterion
+%%% Calculating the optimal number of clusters based on the Calinski-Harabasz, DaviesBouldin, and Handmade indexes
+%%% Author: Huazhi Li, huazhi.li@vu.nl
+%%% Date: 20-07-2021
 
 clear; close all; clc 
 
