@@ -3,11 +3,11 @@
 #          (1) the cross-validation threshold selection of Northrop et al. (2017), which can be used in package threshr
 #          (2) the Stability Threshold Method (STM) and Mean Residual Life (MRL) plot developed by Coles (2001), which can be used in function tstab.gpd (mev) and mrl (texmex) respectively
 # Author:  Huazhi Li, huazhi.li@vu.nl
-# Date:    2021-31-08
+# Date:    31-08-2021
 
 # control+shift+c: put into comment
 
-# Initialization ----------------------------------------------------------
+## Initialization ----------------------------------------------------------
 # Load pacakges
 options(warn=-1)
 library(threshr)
