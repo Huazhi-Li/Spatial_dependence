@@ -4,7 +4,6 @@
 # Author:  Huazhi Li, huazhi.li@vu.nl
 # Date:    31-08-2021
 
-# control+shift+c: put into comment
 
 ## Initialization ----------------------------------------------------------
 # Load pacakges
