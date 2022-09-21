@@ -1,5 +1,5 @@
 %%% Evaluate Kmeans clustering solutions
-%%% Calculating the optimal number of clusters based on the Calinski-Harabasz, DaviesBouldin, and Handmade indexes
+%%% Calculating the optimal number of clusters based on the ratio of mean correlation and mean standard deviation
 %%% Author: Huazhi Li, huazhi.li@vu.nl
 %%% Date: 20-07-2021
 
@@ -161,7 +161,7 @@ for zz = 3
 
         end
 
-        %% Stats HandMade
+        %% Stats mean corr / mean std
         stats_centroids = nan(size(correlations_clusters,2),3);
         
         for irep= 1: size(correlations_clusters,2)
