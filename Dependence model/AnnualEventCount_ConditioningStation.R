@@ -1,10 +1,7 @@
-# Script:  Event_generation.R
-# Details: This script generates an event set of sythetic water levels which are spatially dependent within an user defined cluster. 
-#          It first calcultes the dependence structure between sites by the conditional multivariate extreme value model of Heffernan and Tawn, using 3 day maxima water levels.
-#          The model is carried out by the function mex of the texmex package. This function consists of two steps. First, Generalized Pareto distributions (GPD) are
-#          fitted to the upper tails of each of the marginal distributions of the data: the GPD parameters are estimated for each column of the data in turn, independently 
-#          of all other columns. Then, the conditional multivariate approach of Heffernan and Tawn is used to model the dependence between variables.
-#          The second part is the stochastic event generation.
+# Script:  AnnualEventCount_ConditioningStation.R
+# Details: This script calculates (1) the total number of events to be simulated and (2) the corresponding conditioning stations.
+#          It first extract historic extreme events from the input 3-day maxima water level series. The number of extreme events are fitted to a distribution using 
+#          the Kernel Density Distribution. Within each event, we calcuate the conditioning station which has the largest value on the Laplace Margin. 
 # Author:  Huazhi Li, huazhi.li@vu.nl
 # Date:    2021-27-09
 
@@ -85,7 +82,7 @@ index.extremes <- which(rowSums(data.extremes)>0)
 yr_index <- as.integer(index.extremes/(365.25/3))+1
 n_event_obs <- sapply(1:yr_obs,function(i)length(which(yr_index==i)))
 
-# Fit to a non-parametric distribution using the Kernel Density Distribution which can handle discrete data (Wansouwé et al., 2015)
+# Fit to a non-parametric distribution using the Kernel Density Distribution which can handle discrete data (WansouwÃ© et al., 2015)
 bw <- hcvd.fun(n_event_obs, NULL, "bino") # estimate the bandwidth
 pmf <- kpmfe.fun(n_event_obs,bw$hcv,"discrete","bino") # calculate the probability mass function
 
