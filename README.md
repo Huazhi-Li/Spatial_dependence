@@ -1,2 +1,2 @@
-# Spatial_dependence
+# Spatial dependence
  
