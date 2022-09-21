@@ -1,6 +1,6 @@
 # Script:  calculate_CIs.R
-# Details: This script calculates the confidence intervals (5th, 95th) for return levels for each station. 
-
+# Details: This script calculates the confidence intervals (5th, 95th) for return levels for each station. A range of return periods are considered: 1, 2, 5, 25, 50, 
+#          100, 250, 500, 1000.
 # Author:  Huazhi Li, huazhi.li@vu.nl
 # Date:    2022-27-08
 
