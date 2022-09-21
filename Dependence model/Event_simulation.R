@@ -1,5 +1,5 @@
-# Script:  Event_simluation_parallel.R
-# Details: This script generates an event set of sythetic water levels which are spatially dependent within an user defined cluster. 
+# Script:  Event_simluation.R
+# Details: This script generates stochastic events of spatially-dependent water levels given station i is the contioning site. 
 #          It first calcultes the dependence structure between sites by the conditional multivariate extreme value model of Heffernan and Tawn, using 3 day maxima water levels.
 #          The model is carried out by the function mex of the texmex package. This function consists of two steps. First, Generalized Pareto distributions (GPD) are
 #          fitted to the upper tails of each of the marginal distributions of the data: the GPD parameters are estimated for each column of the data in turn, independently 
