@@ -32,7 +32,7 @@ for (i in station_ids)
   
   
   # Set a vector of training thresholds
-  u <- quantile(esl_3d, probs = seq(0.1, 0.998, by = 0.01))
+  u <- quantile(esl_3d, probs = seq(0.1, 0.999, by = 0.01))
   
   cv_res <- ithresh(data = esl_3d, u_vec = u, n = 1000)
   u_best[j] <- summary(cv_res)[4]
