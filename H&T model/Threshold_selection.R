@@ -1,7 +1,6 @@
 # Script:  Threshold_selection.R
-# Details: Selecting approriate threshold for 3-day maxima extreme sea levels at each site, using
-#          (1) the cross-validation threshold selection of Northrop et al. (2017), which can be used in package threshr
-#          (2) the Stability Threshold Method (STM) and Mean Residual Life (MRL) plot developed by Coles (2001), which can be used in function tstab.gpd (mev) and mrl (texmex) respectively
+# Details: Selecting approriate threshold for 3-day maxima extreme sea levels at each station, using
+#          the cross-validation threshold selection of Northrop et al. (2017). This method can be found in package threshr
 # Author:  Huazhi Li, huazhi.li@vu.nl
 # Date:    31-08-2021
 
