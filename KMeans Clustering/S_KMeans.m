@@ -1,5 +1,5 @@
 %%% KMeans clustering
-%%% Using Kmeans clustering method to group global extreme sea levels into subgroups based on their statistical correlation 
+%%% Using Kmeans clustering method to group global extreme sea levels into subgroups based on their Pearson correlation 
 %%% Over 10 pre-defined coastal zones
 %%% Author: Huazhi Li, huazhi.li@vu.nl
 %%% Date: 20-07-202
