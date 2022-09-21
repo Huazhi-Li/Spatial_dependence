@@ -1,7 +1,10 @@
 # Script:  AnnualEventCount_ConditioningStation.R
 # Details: This script calculates (1) the total number of events to be simulated and (2) the corresponding conditioning stations.
 #          It first extract historic extreme events from the input 3-day maxima water level series. The number of extreme events are fitted to a distribution using 
-#          the Kernel Density Distribution. Within each event, we calcuate the conditioning station which has the largest value on the Laplace Margin. 
+#          the Kernel Density Distribution for estimating the total number of events to be generated.
+#          The second part is estimating the number of events during which the station i is the conditioning station. To do so, we first calculate the probability that 
+#          each station is the conditioning station (i.e. the station has the largest Laplace value) using the empirical data. Then, we assign the total number of events
+#          to each conditioning site based on the probability distribution.
 # Author:  Huazhi Li, huazhi.li@vu.nl
 # Date:    2021-27-09
 
